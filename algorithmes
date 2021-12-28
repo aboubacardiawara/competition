@@ -1,0 +1,4 @@
+Tournament Play(....).
+- melanger aléatoirement les elements de la liste.
+- ensuite, les elements d'indices 0 et 1 seront des adversaires,
+puis 2 et 3, 4 et 5 ....

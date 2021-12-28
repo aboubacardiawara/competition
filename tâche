@@ -1,0 +1,7 @@
+Problème:
+- Master prend 3 parametres, le premier (liste des competiteurs) est obligatoire.
+Gerer le cas où user n'a pas envie de definir les 2 autres ou l'un des 2 autres parmètre.
+Solution possible: Utilisation d'un pattern builder.
+
+- duplication de code dans les masterRule
+en faire une classe abstraite 
