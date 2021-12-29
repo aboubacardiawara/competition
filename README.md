@@ -41,7 +41,7 @@ $ make testCompile # compile only the test classes, be sure to have already done
 ```
 ## compile source code and tests in one step
 ```bash
-$ make # compile both (tests) and (code under test) but also the jar (see bollow). 
+$ make # compile both (tests) and (code under test) but also the jar (see bollow).
 ```
 
 ## run test
@@ -85,12 +85,12 @@ You can now execute it !!!!
 
 ## Execute the Tournament Competition
 ```bash
-$ java -jar Tournament.jar 
+$ java -jar Tournament.jar
 ```
 
 ## Execute the League Competition
 ```bash
-$ java -jar League.jar 
+$ java -jar League.jar
 ```
 
 ## Execute the Master Competition
@@ -109,5 +109,10 @@ $ java -jar Master.jar 2 psg nantes marseille nice lyon reines lens ajaccio Troy
 ```
 
 # Elements de conception
-- Le Pattern Builder: Au fil des modifications, la construction des competitions mobilisait beacoups d'objets, qui n'etaient pas toujours imperatifs. Nous avons donc utiliser le pattern builder pour pallier le problème de construction.
-- Pattern Strategy: CHaque competition de type master etait sujette à une règle (finaliste d'une poule, nombre de competiteurs). Nous nous sommes inspirer du pattern strategy pour implementer les reglements. Ainsi ils pourront facilemet etre interchangés
+- Le Pattern Builder: Au fil des modifications, la construction des competitions mobilisait beacoup d'objets, qui n'etaient pas toujours imperatifs. Nous avons donc utiliser le pattern builder pour pallier le problème de construction.
+- Pattern Strategy: Chaque competition de type master etait sujette à une règle (finaliste d'une poule, nombre de competiteurs). Nous nous sommes inspirer du pattern strategy pour implementer les reglements. Ainsi ils pourront facilemet etre interchangés
+- Template method: toujours dans le but de saligner au mieux à l'un des principes fondamentaux d'une bonne concption orienté objet (programme ouvert à l'extenxion et fermé à la modification) nous avons utilisé ce patron partout où besoin fut.
+- Patron observateur: patron utilisé pour l'implementation de la fonctionnalité des journalistes et des bookmakers.
+- ...
+
+**Aussi nous avons adopté une approche TDD qui consistait à implementer dans un premier temps les tests puis ecrire le programme proprement dit en se servant du test comme validateur**
